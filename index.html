@@ -162,7 +162,7 @@
   <div class="hero-inner">
     <div class="hero-label">MS in Applied Data Science — Syracuse University</div>
     <h1>Turning data into<br>actionable insight</h1>
-    <p>I'm Ricky Wan, a graduate student in Syracuse University's Applied Human-Centered AI track with a secondary core in Applied Data Science. This portfolio showcases the projects and skills I've developed throughout my studies.</p>
+    <p>Hi! My name is Ricky Wan, I am a graduate student in Syracuse University's Applied Human-Centered AI track with a secondary core in Applied Data Science. This portfolio showcases the projects and skills I've developed throughout my time at SU</p>
     <div class="hero-links">
       <a href="#projects" class="btn btn-primary">View projects</a>
       <a href="https://github.com/Rickwan102" class="btn btn-outline" target="_blank">GitHub</a>
@@ -174,7 +174,7 @@
   <div class="container">
     <div class="section-label">Program learning outcomes</div>
     <h2 class="section-title">What the program teaches</h2>
-    <p class="section-sub">The MS in Applied Data Science is built around six core learning outcomes that span the full data science lifecycle.</p>
+    <p class="section-sub">The MS in Applied Data Science is built around six core learning outcomes that go through the data science lifecycle.</p>
     <div class="outcomes-grid">
       <div class="outcome-card">
         <div class="outcome-num">PLO 1</div>
@@ -213,8 +213,8 @@
 <section id="projects" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="container">
     <div class="section-label">Portfolio projects</div>
-    <h2 class="section-title">Three projects, one skillset</h2>
-    <p class="section-sub">Each project demonstrates a different facet of applied data science — from machine learning and deep learning to AI-powered application development.</p>
+    <h2 class="section-title">Three projects that demonstrate my skillset</h2>
+    <p class="section-sub">Each project demonstrates a different part of applied data science, from machine learning and deep learning to AI-powered application development.</p>
 
     <div class="projects-list">
 
@@ -228,7 +228,7 @@
         </div>
         <div class="contribution-box">
           <div class="contrib-label">My specific contribution</div>
-          <p>I led the clustering analysis portion of the project. I implemented and tuned both DBSCAN and HDBSCAN algorithms, ran a grid search across hyperparameters to optimize silhouette scores, and generated t-SNE visualizations to make the high-dimensional clusters interpretable. I then analyzed and wrote up the cluster profiles — identifying distinct student segments such as the all-male low-anxiety cluster, the lonely high-depression group falling through the cracks of campus services, and the therapy-engaged students with strong social support. These cluster insights formed the basis of our recommendations to the Barnes Center.</p>
+          <p>I led the clustering analysis portion of the project. I implemented and tuned both DBSCAN and HDBSCAN algorithms, ran a grid search across hyperparameters to optimize silhouette scores, and generated t-SNE visualizations to make the high-dimensional clusters interpretable. I then analyzed and wrote up the cluster profiles, identifying distinct student segments such as the all-male low-anxiety cluster, the lonely high-depression group falling through the cracks of campus services, and the therapy-engaged students with strong social support. These cluster insights formed the basis of our recommendations to the Barnes Center.</p>
         </div>
         <div class="project-meta">
           <div class="meta-item">
@@ -263,16 +263,16 @@
         </div>
         <div class="project-title">Music Recommendations for Indie Artists Using Deep Learning</div>
         <div class="project-desc">
-          Built a Convolutional Autoencoder that analyzes short 5-second audio clips to identify acoustically similar songs — bridging mainstream and independent music catalogs. The core problem: listeners on TikTok and Instagram encounter 10–20 second clips but can't find the full track or discover similar indie artists. Existing tools like Shazam only match exact audio, and Spotify's recommendations favor popular artists. Our solution was a deep learning model that learns compact audio embeddings from short snippets, enabling similarity matching without relying on user behavior or popularity data.
+          Built a Convolutional Autoencoder that analyzes short 5-second audio clips to identify acoustically similar songs, bridging mainstream and independent music catalogs. The core problem: listeners on TikTok and Instagram encounter 10–20 second clips but can't find the full track or discover similar indie artists. Existing tools like Shazam only match exact audio, and Spotify's recommendations favor popular artists. Our solution was a deep learning model that learns compact audio embeddings from short snippets, enabling similarity matching without relying on user behavior or popularity data.
         </div>
         <div class="contribution-box">
           <div class="contrib-label">My specific contribution</div>
-          <p>I was responsible for the audio data pipeline. I handled the preprocessing of 8,000 Free Music Archive tracks — splitting each song into 5-second chunks with 50% overlap to generate 83,290 training snippets, converting every chunk into a mel-spectrogram (a 128×216 array representing frequency and loudness over time using Short-Time Fourier Transform), and normalizing all spectrogram values between 0 and 1 so that loud and quiet songs would be comparable. I also implemented the song-level train/validation split to prevent data leakage, ensuring no chunks from the same song appeared in both sets.</p>
+          <p>I was responsible for the audio data pipeline. I handled the preprocessing of 8,000 Free Music Archive tracks, splitting each song into 5-second chunks with 50% overlap to generate 83,290 training snippets, converting every chunk into a mel-spectrogram (a 128×216 array representing frequency and loudness over time using Short-Time Fourier Transform), and normalizing all spectrogram values between 0 and 1 so that loud and quiet songs would be comparable. I also implemented the song-level train/validation split to prevent data leakage, ensuring no chunks from the same song appeared in both sets.</p>
         </div>
         <div class="project-meta">
           <div class="meta-item">
             <div class="meta-label">Results</div>
-            <div class="meta-value">70% Top-10 accuracy; when the exact song wasn't retrieved, results were typically from the same genre — showing the embeddings captured meaningful musical similarity</div>
+            <div class="meta-value">70% Top-10 accuracy; when the exact song wasn't retrieved, results were typically from the same genre, showing the embeddings captured meaningful musical similarity</div>
           </div>
           <div class="meta-item">
             <div class="meta-label">Model</div>
@@ -302,16 +302,16 @@
         </div>
         <div class="project-title">AI Tax Assistant: RAG-Powered Chatbot for Federal Tax Guidance</div>
         <div class="project-desc">
-          Developed a full-stack AI chatbot that answers tax questions using Retrieval-Augmented Generation (RAG) over a custom IRS document vector database, with a specific focus on simplifying tax filing for students — especially international students. Built on Google Gemini 2.5 Flash and LangChain, the system uses a multi-agent architecture: an Orchestrator Agent directing the workflow, an Intake Agent building personalized tax profiles, a RAG Agent retrieving from ChromaDB, a Checklist Agent generating interactive task lists, and a Tool Agent running tax calculations. User data is treated as ephemeral — never logged to a database or used for training — and all uploaded documents are processed with PII detection and masking.
+          Developed a full-stack AI chatbot that answers tax questions using Retrieval-Augmented Generation (RAG) over a custom IRS document vector database, with a specific focus on simplifying tax filing for students, especially international students. Built on Google Gemini 2.5 Flash and LangChain, the system uses a multi-agent architecture: an Orchestrator Agent directing the workflow, an Intake Agent building personalized tax profiles, a RAG Agent retrieving from ChromaDB, a Checklist Agent generating interactive task lists, and a Tool Agent running tax calculations. User data is treated as ephemeral, never logged to a database or used for training — and all uploaded documents are processed with PII detection and masking.
         </div>
         <div class="contribution-box">
           <div class="contrib-label">My specific contribution</div>
-          <p>I contributed approximately 25% of the total project effort across two areas. First, I implemented the chunking strategy for the RAG pipeline — dividing IRS documents into 900-token chunks with 250-token overlap, a configuration I arrived at through testing to preserve context across chunk boundaries without sacrificing retrieval precision. Second, I designed and built the Tool Agent, which provides a tax calculator computing federal tax liability based on income and filing status using 2024 tax brackets and standard deductions. I also initially developed a web search tool but removed it after team discussion to keep the system focused on our curated IRS documentation. Both components were merged into the main orchestrator codebase.</p>
+          <p>I contributed approximately 25% of the total project effort across two areas. First, I implemented the chunking strategy for the RAG pipeline, dividing IRS documents into 900-token chunks with 250-token overlap, a configuration I arrived at through testing to preserve context across chunk boundaries without sacrificing retrieval precision. Second, I designed and built the Tool Agent, which provides a tax calculator computing federal tax liability based on income and filing status using 2024 tax brackets and standard deductions. I also initially developed a web search tool but removed it after team discussion to keep the system focused on our curated IRS documentation. Both components were merged into the main orchestrator codebase.</p>
         </div>
         <div class="project-meta">
           <div class="meta-item">
             <div class="meta-label">Actionable insight</div>
-            <div class="meta-value">Personalized, real-time tax guidance grounded in official IRS documents — accessible to students without tax expertise or access to a CPA</div>
+            <div class="meta-value">Personalized, real-time tax guidance grounded in official IRS documents, accessible to students without tax expertise or access to a CPA</div>
           </div>
           <div class="meta-item">
             <div class="meta-label">Ethics &amp; privacy</div>
@@ -391,13 +391,13 @@
   <div class="container">
     <div class="section-label">Program track</div>
     <h2 class="section-title">My academic track</h2>
-    <p class="section-sub">How I shaped my degree around the intersection of AI and human-centered design.</p>
+    <p class="section-sub">How I shaped my degree around the intersection of AI and data science.</p>
     <div class="track-card">
       <div class="track-badge">Applied Human-Centered AI + Applied Data Science</div>
       <h3>From data science to human-centered AI</h3>
-      <p>I began the program on the Applied Data Science track, which gave me a strong technical foundation — learning how to collect, process, and model data using Python, machine learning, and statistical methods. Courses like IST 707 (Applied Machine Learning) grounded me in the fundamentals of building predictive models and interpreting their outputs for real stakeholders.</p>
-      <p>As the program progressed, I shifted to the Applied Human-Centered AI track with a secondary core in Applied Data Science. This transition reflected a growing interest in not just building models, but building AI systems that people can actually use and trust. The Human-Centered AI track pushed me to think about how AI interacts with real users — questions of interface design, transparency, ethics, and the experience of someone who has never touched a dataset but needs to benefit from one.</p>
-      <p>This dual focus shaped all three of my portfolio projects. The Mental Health Analysis project required communicating sensitive findings to a non-technical stakeholder (the Barnes Center). The Music Recommendation project centered on a real user need — music discovery from short clips. The AI Tax Assistant was built explicitly for students without tax expertise, with privacy and usability at the center of every design decision. In each case, the technical work only mattered insofar as it served the people on the other end of it.</p>
+      <p>I began the program on the Applied Data Science track, which gave me a strong technical foundation, learning how to collect, process, and model data using Python, machine learning, and statistical methods. Courses like IST 707 showed me the fundamentals of building predictive models and interpreting their outputs for real stakeholders.</p>
+      <p>As the program progressed, I shifted to the Applied Human-Centered AI track with a secondary core in Applied Data Science. This transition reflected a growing interest in not just building models, but building AI systems that people can actually use and trust. The Human-Centered AI track pushed me to think about how AI interacts with real users, it made me ask questions about interface design, transparency, ethics, and the experience of someone who has never touched a dataset but needs to benefit from one.</p>
+      <p>This dual focus shaped all three of my portfolio projects. The Mental Health Analysis project required communicating sensitive findings to a non-technical stakeholder. The Music Recommendation project centered on a real user need, music discovery from short clips. The AI Tax Assistant was built explicitly for students without tax expertise, with privacy and usability at the center of every design decision. In each case, the technical work only mattered insofar as it served the people on the other end of it.</p>
     </div>
   </div>
 </section>
@@ -406,16 +406,16 @@
   <div class="container">
     <div class="section-label">Overall synthesis</div>
     <h2 class="section-title">How I achieved all six outcomes</h2>
-    <p class="section-sub">Across three projects, each program learning outcome was demonstrated — often multiple times, in different contexts.</p>
+    <p class="section-sub">Across three projects, each program learning outcome was demonstrated, often multiple times, in different contexts.</p>
     <div class="synthesis-card">
       <h3>PLO achievement summary</h3>
       <div class="plo-row">
         <div class="plo-badge">PLO 1</div>
-        <div class="plo-text"><strong>Data collection &amp; storage:</strong> In the Music project, I built a full data pipeline from raw audio to normalized mel-spectrograms across 8,000 Free Music Archive tracks. In the Tax Assistant, I designed the chunking strategy that transformed raw IRS PDFs into a structured, retrievable vector database in ChromaDB — learning firsthand that upstream pipeline decisions directly impact downstream retrieval quality.</div>
+        <div class="plo-text"><strong>Data collection &amp; storage:</strong> In the Music project, I built a full data pipeline from raw audio to normalized mel-spectrograms across 8,000 Free Music Archive tracks. In the Tax Assistant, I designed the chunking strategy that transformed raw IRS PDFs into a structured, retrievable vector database in ChromaDB, learning firsthand that upstream pipeline decisions directly impact downstream retrieval quality.</div>
       </div>
       <div class="plo-row">
         <div class="plo-badge">PLO 2</div>
-        <div class="plo-text"><strong>Actionable insight:</strong> The Mental Health project produced concrete recommendations for the Barnes Center — focus outreach on lonely students, build group programs, and use RAs for early identification. The Tax Assistant delivered real-time, personalized tax guidance to students who otherwise couldn't afford a CPA. Both projects moved from analysis to recommendations a real stakeholder could act on.</div>
+        <div class="plo-text"><strong>Actionable insight:</strong> The Mental Health project produced concrete recommendations for the Barnes Center: focus outreach on lonely students, build group programs, and use RAs for early identification. The Tax Assistant delivered real-time, personalized tax guidance to students who otherwise couldn't afford a CPA. Both projects moved from analysis to recommendations a real stakeholder could act on.</div>
       </div>
       <div class="plo-row">
         <div class="plo-badge">PLO 3</div>
@@ -423,15 +423,15 @@
       </div>
       <div class="plo-row">
         <div class="plo-badge">PLO 4</div>
-        <div class="plo-text"><strong>Programming:</strong> All three projects were built in Python. Across the portfolio I worked with scikit-learn, PyTorch, LangChain, ChromaDB, Streamlit, and HuggingFace — writing production-oriented code that needed to integrate cleanly with teammates' contributions, handle edge cases, and run reliably on real data.</div>
+        <div class="plo-text"><strong>Programming:</strong> All three projects were built in Python. Across the portfolio I worked with scikit-learn, PyTorch, LangChain, ChromaDB, Streamlit, and HuggingFace, writing production-oriented code that needed to integrate cleanly with teammates' contributions, handle edge cases, and run reliably on real data.</div>
       </div>
       <div class="plo-row">
         <div class="plo-badge">PLO 5</div>
-        <div class="plo-text"><strong>Communication:</strong> Each project involved presenting findings to a non-expert audience. The Mental Health project was written for Barnes Center administration. The Tax Assistant's entire interface was designed for students with no tax background — using plain language, step-by-step checklists, and visual form guides. The Music project was presented as a research poster accessible to a general audience.</div>
+        <div class="plo-text"><strong>Communication:</strong> Each project involved presenting findings to a non-expert audience. The Mental Health project was written for Barnes Center administration. The Tax Assistant's entire interface was designed for students with no tax background, using plain language, step-by-step checklists, and visual form guides. The Music project was presented as a research poster accessible to a general audience.</div>
       </div>
       <div class="plo-row">
         <div class="plo-badge">PLO 6</div>
-        <div class="plo-text"><strong>Ethics &amp; fairness:</strong> The Mental Health project explicitly addressed the risk of misusing model outputs for individual diagnosis rather than group-level planning, and flagged limitations around campus generalizability. The Tax Assistant was built with privacy-by-design — ephemeral user data, PII masking, and clear legal disclaimers. Both projects treated ethics as a core design constraint, not an afterthought.</div>
+        <div class="plo-text"><strong>Ethics &amp; fairness:</strong> The Mental Health project explicitly addressed the risk of misusing model outputs for individual diagnosis rather than group-level planning, and flagged limitations around campus generalizability. The Tax Assistant was built with privacy-by-design, ephemeral user data, PII masking, and clear legal disclaimers. Both projects treated ethics as a core design constraint, not an afterthought.</div>
       </div>
     </div>
   </div>
