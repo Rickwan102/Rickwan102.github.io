@@ -125,10 +125,8 @@
   .plo-text { font-size: 14px; color: var(--muted); line-height: 1.6; }
   .plo-text strong { color: var(--text); font-weight: 500; }
 
-  .video-placeholder { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 3rem 2rem; text-align: center; }
-  .video-icon { width: 56px; height: 56px; border-radius: 50%; background: var(--accent-light); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; }
-  .video-placeholder h3 { font-size: 16px; font-weight: 500; margin-bottom: 0.5rem; }
-  .video-placeholder p { font-size: 14px; color: var(--muted); max-width: 400px; margin: 0 auto 1.5rem; }
+  .video-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .video-wrap iframe { display: block; width: 100%; height: 480px; border: none; }
 
   .blog-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; }
   .blog-card h3 { font-family: 'DM Serif Display', serif; font-size: 1.4rem; margin-bottom: 0.75rem; }
@@ -144,6 +142,7 @@
     nav ul { gap: 1rem; }
     section { padding: 3rem 0; }
     .hero { padding: 4rem 0 3rem; }
+    .video-wrap iframe { height: 240px; }
   }
 </style>
 </head>
@@ -444,14 +443,9 @@
   <div class="container">
     <div class="section-label">Video presentation</div>
     <h2 class="section-title">Program reflection</h2>
-    <p class="section-sub">A 1–2 minute video summarizing what I learned in the MS Applied Data Science program.</p>
-    <div class="video-placeholder">
-      <div class="video-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d5a3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-      </div>
-      <h3>Video coming soon</h3>
-      <p>Record a 1–2 minute video using Zoom, Loom, or your phone, upload it to YouTube, then replace this section with an embedded YouTube iframe.</p>
-      <p style="font-size:13px; color:#999; margin-top:0.5rem;">To embed: replace this placeholder with &lt;iframe width="100%" height="400" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</p>
+    <p class="section-sub">A short video summarizing what I learned in the MS Applied Data Science program.</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/hTUEAcrpdNk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -460,7 +454,7 @@
   <div class="container">
     <div class="section-label">Blog post</div>
     <h2 class="section-title">Reflections on the program</h2>
-    <p class="section-sub">What I expected, what I learned, and what surprised me.</p>
+    <p class="section-sub">Around 3,000 words on what I expected, what I learned, and what surprised me.</p>
     <div class="blog-card">
       <h3>My journey through the MS in Applied Data Science</h3>
 
